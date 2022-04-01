@@ -1,15 +1,16 @@
 <template>
-<div>
-  <v-container >
+
+  <v-container>
     <v-card
     elevation="2"
-    v-for = "(books, index) in book" :key = "books.id" >
-    <router-link :to= "{ name: 'detalji', params: { bookID: index } }"><v-btn>{{books.name}}</v-btn></router-link>
+    v-for = "(books, index) in book" :key = "books.id" 
+    class="px-5 py-5 my-5">
+  <router-link :to= "{ name: 'detalji', params: { bookID: index } }">  <v-btn class="mb-4">{{books.name}}</v-btn></router-link>
     <p>Prvi autor: {{books.authors[0]}}</p>
     <p>Datum izdavanja: {{books.released}}</p>
     </v-card>
   </v-container>
-  </div>
+
 </template>
 
 <script>
@@ -38,7 +39,8 @@
 </script>
 
 <style scoped>
-.item{
-  padding: 2rem;
+a{
+  text-decoration: none;
 }
+
 </style>

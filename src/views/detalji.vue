@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <v-card
-    elevation="2">
+    elevation="2"
+    class="px-5 py-5"
+    >
     <p>Prvi autor: {{book.authors[0]}}</p>
     <p>Datum izdavanja: {{book.released}}</p>
     <p>ISBN: {{book.isbn}}</p>
